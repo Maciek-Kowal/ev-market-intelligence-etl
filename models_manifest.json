@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "Starannie wyselekcjonowany koszyk referencyjny pojazdów EV vs HEV do analizy TCO",
+    "target_market": "PL",
+    "total_models": "31"
+  },
+  "vehicles": [
+    { "make": "Renault", "model": "Zoe", "segment": "B", "drivetrain": "EV", "slug": "zoe" },
+    { "make": "Peugeot", "model": "e-208", "segment": "B", "drivetrain": "EV","slug": "208"},
+    { "make": "Opel", "model": "Corsa-e", "segment": "B", "drivetrain": "EV", "slug": "corsa" },
+    { "make": "Fiat", "model": "500e", "segment": "B", "drivetrain": "EV", "slug": "500" },
+    { "make": "Toyota", "model": "Yaris", "segment": "B", "drivetrain": "HEV", "slug": "yaris" },
+    { "make": "Renault", "model": "Clio E-Tech", "segment": "B", "drivetrain": "HEV", "slug": "clio" },
+    { "make": "Honda", "model": "Jazz", "segment": "B", "drivetrain": "HEV", "slug": "jazz" },
+    { "make": "Toyota", "model": "Yaris Cross", "segment": "B", "drivetrain": "HEV", "slug": "yaris-cross" },
+    
+    { "make": "Nissan", "model": "Leaf", "segment": "C", "drivetrain": "EV", "slug": "leaf" },
+    { "make": "Volkswagen", "model": "ID.3", "segment": "C", "drivetrain": "EV", "slug": "id-3" },
+    { "make": "Kia", "model": "Niro EV", "segment": "C", "drivetrain": "EV", "slug": "niro" },
+    { "make": "Hyundai", "model": "Kona Electric", "segment": "C", "drivetrain": "EV", "slug": "kona" },
+    { "make": "Renault", "model": "Megane E-Tech", "segment": "C", "drivetrain": "EV", "slug": "megane" },
+    { "make": "Toyota", "model": "Corolla", "segment": "C", "drivetrain": "HEV", "slug": "corolla" },
+    { "make": "Toyota", "model": "C-HR", "segment": "C", "drivetrain": "HEV", "slug": "c-hr" },
+    { "make": "Hyundai", "model": "Ioniq HEV", "segment": "C", "drivetrain": "HEV", "slug": "ioniq" },
+    { "make": "Honda", "model": "Civic", "segment": "C", "drivetrain": "HEV", "slug": "civic" },
+    
+    { "make": "Tesla", "model": "Model 3", "segment": "D", "drivetrain": "EV", "slug": "model-3" },
+    { "make": "Tesla", "model": "Model Y", "segment": "C-SUV", "drivetrain": "EV", "slug": "model-y" },
+    { "make": "Skoda", "model": "Enyaq", "segment": "C-SUV", "drivetrain": "EV", "slug": "enyaq" },
+    { "make": "Volkswagen", "model": "ID.4", "segment": "C-SUV", "drivetrain": "EV", "slug": "id-4" },
+    { "make": "Kia", "model": "EV6", "segment": "C-SUV", "drivetrain": "EV", "slug": "ev6" },
+    { "make": "Hyundai", "model": "Ioniq 5", "segment": "C-SUV", "drivetrain": "EV", "slug": "ioniq-5" },
+    { "make": "Toyota", "model": "RAV4", "segment": "C-SUV", "drivetrain": "HEV", "slug": "rav4" },
+    { "make": "Toyota", "model": "Camry", "segment": "D", "drivetrain": "HEV", "slug": "camry" },
+    { "make": "Ford", "model": "Kuga FHEV", "segment": "C-SUV", "drivetrain": "HEV", "slug": "kuga" },
+    { "make": "Hyundai", "model": "Tucson", "segment": "C-SUV", "drivetrain": "HEV", "slug": "tucson" },
+    { "make": "Kia", "model": "Sportage", "segment": "C-SUV", "drivetrain": "HEV", "slug": "sportage" },
+    { "make": "Honda", "model": "CR-V", "segment": "C-SUV", "drivetrain": "HEV", "slug": "cr-v" },
+    { "make": "Lexus", "model": "NX", "segment": "C-SUV", "drivetrain": "HEV", "slug": "nx" },
+    { "make": "Lexus", "model": "UX", "segment": "C-SUV", "drivetrain": "HEV", "slug": "ux" }
+  ]
+}
