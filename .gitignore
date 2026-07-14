@@ -1,3 +1,5 @@
+.env
+gcp-key.json
 sample.json
 *.csv
 __pycache__/

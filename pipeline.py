@@ -42,5 +42,5 @@ class ScrapingPipeline:
                 parsed_cars = self.parser.parse_offers(raw_json)
                 all_cars.extend(parsed_cars)
 
-        self.logger.info(f"Wyciągnięto łącznie {len(all_cars)} czystych ogłoszeń.")
+        self.logger.info(f"Wyciągnięto łącznie {len(all_cars)} czystych ogłoszeń")
         return all_cars
