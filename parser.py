@@ -47,7 +47,9 @@ class OtomotoParser:
                             "mileage": params.get("mileage"),
                             "make": params.get("make"),
                             "model": params.get("model"),
-                            "battery_kwh": params.get("battery_capacity"),  # Nowe!
+                            "fuel_type": params.get("fuel_type"),
+                            "engine_power": params.get("engine_power"),
+                            "battery_kwh": params.get("battery_capacity"),
                             "battery_owned": "wynajem" not in title and "wynajem" not in desc,
                             "city": node.get("location", {}).get("city", {}).get("name"),
                         }
