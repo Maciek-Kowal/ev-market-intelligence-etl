@@ -1,0 +1,5 @@
+httpx
+selectolax
+python-dotenv
+google-cloud-bigquery
+pydantic
