@@ -1,0 +1,34 @@
+name: Daily Otomoto Scraper
+
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch: 
+jobs:
+  scrape-and-load:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Pobranie kodu repozytorium
+      uses: actions/checkout@v4
+
+    - name: Konfiguracja środowiska Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.14'
+
+    - name: Instalacja bibliotek
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Odtworzenie klucza GCP JSON z sekretu
+      run: |
+        echo '${{ secrets.GCP_CREDENTIALS }}' > gcp-key.json
+
+    - name: Uruchomienie potoku ETL
+      env:
+        GCP_PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
+        GCP_DATASET_ID: ${{ secrets.GCP_DATASET_ID }}
+        GOOGLE_APPLICATION_CREDENTIALS: "gcp-key.json"
+      run: python main.py
