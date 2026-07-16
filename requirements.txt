@@ -1,4 +1,4 @@
-httpx
+httpx[http2]
 selectolax
 python-dotenv
 google-cloud-bigquery
