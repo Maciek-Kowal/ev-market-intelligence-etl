@@ -4,9 +4,9 @@ import asyncio
 from datetime import date
 from dotenv import load_dotenv
 
-from config import load_manifest
-from pipeline import ScrapingPipeline
-from database import BigQueryLoader
+from src.config import load_manifest
+from src.pipeline import ScrapingPipeline
+from src.database import BigQueryLoader
 
 load_dotenv()
 
@@ -93,7 +93,7 @@ if __name__ == "__main__":
     logger.info(f"Przypisano nowy snapshot_id: {next_snapshot}")
 
     try:
-        manifest = load_manifest("models_manifest.json")
+        manifest = load_manifest("config/models_manifest.json")
         pipeline = ScrapingPipeline(manifest)
         raw_results = asyncio.run(pipeline.run())
 
