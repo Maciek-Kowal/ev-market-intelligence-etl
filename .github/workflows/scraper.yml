@@ -4,6 +4,7 @@ on:
   schedule:
     - cron: '0 2 * * *'
   workflow_dispatch: 
+
 jobs:
   scrape-and-load:
     runs-on: ubuntu-latest
@@ -22,13 +23,14 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Odtworzenie klucza GCP JSON z sekretu
+    - name: Odtworzenie klucza GCP JSON w folderze credentials
       run: |
-        echo '${{ secrets.GCP_CREDENTIALS }}' > gcp-key.json
+        mkdir -p credentials
+        echo '${{ secrets.GCP_CREDENTIALS }}' > credentials/gcp-key.json
 
     - name: Uruchomienie potoku ETL
       env:
         GCP_PROJECT_ID: ${{ secrets.GCP_PROJECT_ID }}
         GCP_DATASET_ID: ${{ secrets.GCP_DATASET_ID }}
-        GOOGLE_APPLICATION_CREDENTIALS: "gcp-key.json"
+        GOOGLE_APPLICATION_CREDENTIALS: "credentials/gcp-key.json"
       run: python main.py
