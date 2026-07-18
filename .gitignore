@@ -3,10 +3,6 @@ credentials/
 gcp-key.json
 *.pem
 *.key
-excel/*.xlsm
-excel/*.xlsx
-data/*.json
-data/*.csv
 !config/models_manifest.json
 __pycache__/
 *.py[cod]
