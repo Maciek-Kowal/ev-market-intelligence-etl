@@ -55,7 +55,7 @@ Narzędzie w obecnej formie pozwala na natychmiastową weryfikację stanu rynku 
 - `main.py` - główny punkt startowy aplikacji wywołujący potok asynchroniczny.
 - `requirements.txt` - lista wymaganych pakietów środowiska Python.
 
-![Struktura BigQuery](images/schema.png)
+![Struktura BigQuery](images/Schema.png)
 *Rys 2. Struktura zaimplementowanych tabel faktów i wymiarów w hurtowni Google BigQuery.*
 
 ## Kolejne kroki i rozwój projektu
