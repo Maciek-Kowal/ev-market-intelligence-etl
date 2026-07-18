@@ -10,7 +10,7 @@
 
 ## Opis projektu
 
-Projekt to w pełni zautomatyzowane rozwiązanie analityczne, którego celem jest codzienne monitorowanie rynku samochodów elektrycznych (EV) w Polsce. Narzędzie samodzielnie pozyskuje dane z portalu ogłoszeniowego, przetwarza je, zasila hurtownię danych w chmurze, a następnie serwuje gotowe zestawienia analityczne dla ostatecznego użytkownika biznesowego w postaci zautomatyzowanego arkusza kalkulacyjnego. 
+Projekt to w pełni zautomatyzowane rozwiązanie analityczne, którego celem jest codzienne monitorowanie rynku samochodów zelektryfikowanych (elektrycznych EV oraz hybrydowych HEV) w Polsce. Narzędzie samodzielnie pozyskuje dane z portalu ogłoszeniowego, przetwarza je, zasila hurtownię danych w chmurze, a następnie serwuje gotowe zestawienia analityczne dla ostatecznego użytkownika biznesowego w postaci zautomatyzowanego arkusza kalkulacyjnego. 
 
 Architektura została zaprojektowana z myślą o niezawodności, optymalizacji zapytań sieciowych oraz łatwości w utrzymaniu, co odzwierciedla rynkowe standardy budowania procesów zasilania danymi.
 
@@ -39,7 +39,7 @@ System składa się z trzech głównych modułów, które wykonują się w ści�
 Narzędzie w obecnej formie pozwala na natychmiastową weryfikację stanu rynku wtórnego. Główne metryki dostarczane przez raport to:
 - Precyzyjny wolumen dostępnych pojazdów w rozbiciu na konkretne marki i modele.
 - Średnia cena rynkowa dla poszczególnych modeli bazująca na aktualnych danych z bieżącego dnia.
-- Podstawa do identyfikacji makroekonomicznych trendów podażowych na rynku pojazdów bezemisyjnych.
+- Podstawa do identyfikacji makroekonomicznych trendów podażowych na rynku pojazdów nisko- i bezemisyjnych.
 
 ![Raport Biznesowy Excel](images/Raport.png)
 *Rys 1. Podgląd wygenerowanego automatycznie raportu biznesowego w programie Excel.*
@@ -64,9 +64,3 @@ Po zgromadzeniu odpowiedniego wolumenu danych historycznych (zapewniającego odp
 - **Analiza Cyklu Życia Ogłoszenia:** Badanie czasu potrzebnego na sprzedaż konkretnego modelu i monitorowanie zjawiska obniżania ceny bazowej w czasie.
 - **Wymiary lokalizacyjne:** Rozszerzenie zestawień o dane geograficzne, co pozwoli mapować podaż pojazdów na poszczególne regiony kraju.
 - **Ewolucja warstwy wizualnej:** Wdrożenie interaktywnego dashboardu przy pomocy technologii klasy BI (np. Power BI).
-
-## O autorze
-
-System został zbudowany jako autorskie rozwiązanie analityczne, demonstrujące umiejętność projektowania nowoczesnych przepływów danych od surowego źródła, aż po ostatecznego odbiorcę biznesowego. 
-
-Jestem studentem 2. roku (5 semestr) informatyki na Uniwersytecie Ekonomicznym w Katowicach, gdzie studiuję na specjalizacji systemy baz danych. Narzędzie stanowi element mojego portfolio w procesie rekrutacyjnym na trzymiesięczny, letni staż (czerwiec - wrzesień) w obszarze inżynierii danych lub analityki na terenie Katowic.
